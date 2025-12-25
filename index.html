@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FIFA Rankings</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIFA World Rankings</title>
+
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>FIFA World Rankings</h1>
-  
+
+  <h1>FIFA Men’s World Rankings</h1>
+
   <div class="controls">
     <label for="confFilter">Confederation:</label>
     <select id="confFilter">
@@ -28,10 +31,21 @@
         <th>Rank</th>
         <th>Team</th>
         <th>Points</th>
+        <th>Conf</th>
       </tr>
     </thead>
-    <tbody></tbody>
+    <tbody>
+      <!-- Filled by app.js -->
+    </tbody>
   </table>
+
+  <footer>
+    <p>
+      Data source: FIFA (inside.fifa.com)  
+      <br />
+      Built with GitHub Pages
+    </p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
