@@ -24,14 +24,6 @@ function render() {
     count++;
   });
 
-  showDebug(
-    `Loaded rankings: ${rankings.length}\n` +
-    `Loaded conf map entries: ${Object.keys(confs).length}\n` +
-    `Rows shown (after filter): ${count}\n` +
-    `Filter: ${selected}\n` +
-    `rankings.json URL: ${new URL("./data/rankings.json", location.href)}\n` +
-    `confederations.json URL: ${new URL("./data/confederations.json", location.href)}`
-  );
 }
 
 async function loadJson(url) {
