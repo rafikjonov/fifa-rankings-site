@@ -8,44 +8,57 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="container">
+    <div class="header">
+      <div class="brand">
+        <h1>FIFA Men’s World Rankings</h1>
+        <div class="sub">Fast, clean, and mobile-friendly (GitHub Pages)</div>
+      </div>
+    </div>
 
-  <h1>FIFA Men’s World Rankings</h1>
+    <div class="controls-card">
+      <div class="controls">
+        <div class="controls-left">
+          <div class="label">Confederation</div>
+          <div class="select-wrap">
+            <select id="confFilter">
+              <option value="ALL">All</option>
+              <option value="UEFA">UEFA</option>
+              <option value="CONMEBOL">CONMEBOL</option>
+              <option value="CONCACAF">CONCACAF</option>
+              <option value="AFC">AFC</option>
+              <option value="CAF">CAF</option>
+              <option value="OFC">OFC</option>
+              <option value="UNKNOWN">Unknown</option>
+            </select>
+          </div>
+        </div>
 
-  <div class="controls">
-    <label for="confFilter">Confederation:</label>
-    <select id="confFilter">
-      <option value="ALL">All</option>
-      <option value="UEFA">UEFA</option>
-      <option value="CONMEBOL">CONMEBOL</option>
-      <option value="CONCACAF">CONCACAF</option>
-      <option value="AFC">AFC</option>
-      <option value="CAF">CAF</option>
-      <option value="OFC">OFC</option>
-      <option value="UNKNOWN">Unknown</option>
-    </select>
+        <div class="badges">
+          <div class="badge"><strong id="badgeTotal">—</strong> teams</div>
+          <div class="badge"><strong id="badgeShown">—</strong> shown</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-card">
+      <table id="rankings">
+        <thead>
+          <tr>
+            <th class="col-rank">Rank</th>
+            <th>Team</th>
+            <th class="col-points">Points</th>
+            <th class="col-conf">Conf</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+
+    <footer>
+      Data source: FIFA (inside.fifa.com) · Built with GitHub Pages
+    </footer>
   </div>
-
-  <table id="rankings">
-    <thead>
-      <tr>
-        <th>Rank</th>
-        <th>Team</th>
-        <th>Points</th>
-        <th>Conf</th>
-      </tr>
-    </thead>
-    <tbody>
-      <!-- Filled by app.js -->
-    </tbody>
-  </table>
-
-  <footer>
-    <p>
-      Data source: FIFA (inside.fifa.com)  
-      <br />
-      Built with GitHub Pages
-    </p>
-  </footer>
 
   <script src="app.js"></script>
 </body>
