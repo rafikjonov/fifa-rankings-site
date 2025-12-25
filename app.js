@@ -1,22 +1,6 @@
 const tbody = document.querySelector("#rankings tbody");
 const filter = document.getElementById("confFilter");
 
-function showDebug(msg) {
-  let box = document.getElementById("debugBox");
-  if (!box) {
-    box = document.createElement("pre");
-    box.id = "debugBox";
-    box.style.padding = "12px";
-    box.style.margin = "12px 0";
-    box.style.background = "#fff3cd";
-    box.style.border = "1px solid #ffeeba";
-    box.style.whiteSpace = "pre-wrap";
-    box.style.fontSize = "14px";
-    document.body.insertBefore(box, document.body.children[2] || document.body.firstChild);
-  }
-  box.textContent = msg;
-}
-
 let rankings = [];
 let confs = {};
 
