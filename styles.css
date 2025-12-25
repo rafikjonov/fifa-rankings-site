@@ -21,3 +21,15 @@ th, td {
 th {
   background: #f5f5f5;
 }
+
+.controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 12px 0;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+}
